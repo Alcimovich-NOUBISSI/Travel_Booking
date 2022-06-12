@@ -30,4 +30,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 <img src="https://user-images.githubusercontent.com/80033137/173251123-4c159553-0726-4247-b751-445eab710710.gif" height="500px">
 
-View project live
+[View project live](https://travel-booking-sooty.vercel.app)
