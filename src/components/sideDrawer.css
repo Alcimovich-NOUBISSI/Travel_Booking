@@ -1,0 +1,18 @@
+
+ .nav_sideDrawer{
+    position:absolute;
+    top: 0;
+    left: -100%;
+    width: 63%;
+    height: 100vh;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -1;
+    text-align: center;
+}
+
+ .nav_sideDrawer.active{
+    left: 0
+}

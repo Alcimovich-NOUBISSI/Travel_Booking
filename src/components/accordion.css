@@ -1,0 +1,58 @@
+.accordion {
+  margin: 20px 0;
+}
+
+.accordion  ul li {
+  margin-bottom: 10px;
+}
+
+.tags {
+  flex-grow: 1;
+}
+
+.tags .tag_items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tags .tag_items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tags .tag_items p {
+  padding: 0.3rem;
+  background-color: grey;
+  border-radius: 3px;
+}
+
+.accordion .services .header,
+.accordion .tags .header,
+.accordion .contact .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.accordion {
+  display: none;
+}
+
+.accordion hr {
+  margin: 2px 0 4px 0;
+}
+
+.contact_items,
+.tag_items,
+.services_items {
+  padding-left: 10px;
+}
+
+@media (max-width: 700px) {
+  .accordion {
+    display: block;
+  }
+}

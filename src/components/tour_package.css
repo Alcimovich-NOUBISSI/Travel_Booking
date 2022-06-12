@@ -1,0 +1,51 @@
+.tour_package {
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.tour_package .image img {
+    width: 100%;
+}
+
+.tour_package .content {
+    margin: 15px;
+}
+
+.tour_package .content .details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour_package .content .details .tour_left {
+    flex: 2;
+    border-right: 2px yellow solid;
+}
+
+.tour_package .content .details .tour_left i {
+    margin-right: 10px
+}
+
+.tour_package .content .details .right {
+    flex: 1;
+    text-align: center;
+}    
+
+.tour_package .content .details .right .price{
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0
+}
+
+.tour_package .buttons button{
+  margin-right: 10px
+}
+
+     
+
+
+
+

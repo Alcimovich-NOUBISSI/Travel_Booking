@@ -1,0 +1,247 @@
+#hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 85px;
+  text-align: center;
+  padding: 100px 80px;
+  background: url(../components/NYC.jpeg) no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  min-height: 100vh;
+}
+
+#hero .hero_text h5,
+#hero .hero_text h1 {
+  font-weight: bold;
+}
+
+#hero .hero_options {
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#hero .hero_options p {
+  padding: 0.5rem 1rem;
+  border-radius: 5px 5px 0 0;
+  margin-left: 20px;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/****************REACT SLICK*****************/
+
+.slick-list {
+  padding: 10px 5px;
+}
+
+.slick-prev {
+  left: -55px;
+}
+
+.slick-next {
+  right: -40px;
+}
+
+.slick-prev::before, 
+.slick-next::before {
+  font-size: 40px;
+  color: orange;
+}
+
+#world .world_content{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr) ;
+  gap: 1.5rem;
+  padding: 0 80px;
+  overflow: hidden;
+}
+
+#destinations .destinations_content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) ;
+  gap: 1.5rem;
+  padding: 0 80px;
+}
+
+#destinations .orange_button,
+#destinations .yellow_button {
+  margin-top: 0 !important;
+  margin-bottom: 35px;
+}
+
+#destinations .orange_button {
+  margin-right: 10px;
+}
+
+#destinations .yellow_button {
+  margin-left: 10px;
+}
+
+#world,
+#tour_package,
+#destinations,
+#restau_and_hotels,
+#transport_facilities,
+#tweets,
+#recent_articles {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.headin {
+  font-weight: bold;
+}
+
+.headin span {
+  color: var(--orange);
+}
+
+.headin_p {
+  margin-bottom: 35px
+}
+
+/*----------------------------------------------------------------*/
+
+#tour_package .tour_content,
+#transport_facilities .transport_facilities_content,
+#restau_and_hotels .restau_content,
+#recent_articles .recent_articles_content {
+  padding: 0 70px;
+  height: auto;
+}
+
+#cta_tours {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: black;
+  background: url(../components/NYC.jpeg) no-repeat;
+  background-size: cover;
+}
+
+#cta_tours .content {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+#metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 70px;
+  /* The image used */
+  background-image: url("https://static.onecms.io/wp-content/uploads/sites/28/2021/07/08/toronto-ontario-canada-lead-TORONTOTG0721.jpg");
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#metrics div {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem
+}
+
+#metrics div i{
+  margin-bottom: 20px
+}
+
+#metrics .number {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.active {
+  background-color: #fff;
+  color: orange;
+}
+
+.orange_button {
+  background-color: var(--orange);
+  color: white;
+  padding: .6rem 1rem;
+  border-radius: 5px;
+  margin-top: 20px
+}
+
+.yellow_button {
+  background-color: var(--yellow);
+  color: black;
+  padding: .6rem 1rem;
+  border-radius: 5px;
+  margin-top: 20px
+}
+
+#tweets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("https://hospitality-on.com/sites/default/files/2018-05/madrid.jpg") no-repeat ;
+  background-size: cover;
+  color: #fff;
+}
+
+#tweets i {
+  color: blue;
+}
+
+#tweets .tweets_content {
+  width: 75%;
+  margin: 0 auto;
+  font-size: .8rem;
+  margin-top: 70px
+}
+
+
+@media (max-width: 929px) {
+ #metrics{
+  grid-template-columns: repeat(2, 1fr) ;
+  gap: 1.5rem;
+  padding: 70px 20px;
+}
+#metrics div {
+  font-size: 1rem;
+}
+}
+
+@media (max-width: 750px) {
+  #hero{
+    padding: 100px 30px;
+ }
+ }
+
+@media (max-width: 617px) {
+  #metrics{
+   grid-template-columns: repeat(1, 1fr) ;
+   gap: 1.5rem;
+   padding: 70px 20px;
+  }
+  #metrics div {
+    font-size: 1rem;
+  }
+ }
+
+ @media (max-width : 425px) {
+  #tour_package .tour_content,
+  #transport_facilities .transport_facilities_content,
+  #restau_and_hotels .restau_content,
+  #recent_articles .recent_articles_content,
+  #destinations .destinations_content {
+    padding: 0 20px;
+  }
+ }
